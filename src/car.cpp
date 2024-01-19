@@ -4,15 +4,16 @@ namespace car{
 
 //定数
 const carState initCarState = {kEast, kStop, INIT_GAS, INIT_X_POS, INIT_Y_POS, kOK};
-//静的変数
-carState egoCar = initCarState;
 
 //関数宣言
 void carMoveFunction(void);
 void carTurnFunction(int turn_direction);
 bool judgeSpeeding(void);
 
-//初期化
+//静的変数
+carState egoCar = initCarState;
+
+//初期化する
 void initCar(){
     egoCar = initCarState;
 }

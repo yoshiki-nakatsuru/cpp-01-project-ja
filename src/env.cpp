@@ -1,13 +1,15 @@
 #include "env.h"
 
-
 namespace env{
 
+//定数
 const gameInfo kInitGameData = {INIT_SCORE, INIT_TIME, TARGET_1};
 
-static gameInfo game_data = kInitGameData;
-
+//関数宣言
 void setTarget(void);
+//静的変数
+
+static gameInfo game_data = kInitGameData;
 
 //初期化する
 void initEnv(void){

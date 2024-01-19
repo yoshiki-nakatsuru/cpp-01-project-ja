@@ -6,7 +6,6 @@
 #include "common.h"
 #include "map.h"
 
-
 #define INIT_X_POS 4
 #define INIT_Y_POS 8
 #define INIT_GAS 200

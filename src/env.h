@@ -18,8 +18,6 @@ struct gameInfo{
     std::string next_location;
 };
 
-
-
 extern void initEnv(void);
 extern void updateEnv(void);
 extern int getGameScore(void);

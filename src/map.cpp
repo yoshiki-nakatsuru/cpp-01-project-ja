@@ -2,18 +2,20 @@
 
 namespace map{
 
+//定数
 const mapCell kInvalidCell = {"*", "", kCellInvalid, kNormal};
 const mapCell kNormalStreet = {" ", "municipal road", kCellvalid, kNormal};
 const mapCell kNarrowStreet = {"'", "narrow road", kCellvalid, kOnlyLowSpeed};
 
-//マップデータ
-static std::array<std::array<mapCell,  MAP_X_RAW_SIZE>, MAP_Y_RAW_SIZE> stage_map_{{}};
-
+//関数宣言
 void outOfMap(void);
 void invalidArea(int x_postion, int y_position, int x_size, int y_size);
 void lonStreet(int x_position, int y_position, int street_length, mapCell street_status);
 void latStreet(int x_position, int y_position, int street_length, mapCell street_status);
 void pointLocation(int x_position, int y_position, mapCell point_status);
+
+//静的変数
+static std::array<std::array<mapCell,  MAP_X_RAW_SIZE>, MAP_Y_RAW_SIZE> stage_map_{{}};
 
 //マップの初期化
 void initMap(void){

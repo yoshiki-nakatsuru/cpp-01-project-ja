@@ -2,6 +2,7 @@
 
 namespace display{
 
+//関数宣言
 void clearScreen(void);
 void infoDisplay(int car_x_pos, int car_y_pos);
 
